@@ -21,34 +21,45 @@ export class Dice {
     }
 }
 
+export enum DiceType {
+Coin = "Coin",
+D3 = "D3",
+D4 = "D4",
+D6 = "D6",
+D8 = "D8",
+D10 = "D10",
+D12 = "D12",
+D20 = "D20"
+}
+
 export const coin = (): Dice => {
-    return new Dice("Coin", ["Face", "Tail"])
+    return new Dice(DiceType.Coin, ["Face", "Tail"])
 }
 
 export const d3 = (): Dice => {
-    return new Dice("D3", ["1", "2", "3"])
+    return new Dice(DiceType.D3, ["1", "2", "3"])
 }
 
 export const d4 = (): Dice => {
-    return new Dice("D4", ["1", "2", "3", "4"])
+    return new Dice(DiceType.D4, ["1", "2", "3", "4"])
 }
 
 export const d6 = (): Dice => {
-    return new Dice("D6", ["1", "2", "3", "4", "5", "6"])
+    return new Dice(DiceType.D6, ["1", "2", "3", "4", "5", "6"])
 }
 
 export const d8 = (): Dice => {
-    return new Dice("D8", ["1", "2", "3", "4", "5", "6", "7", "8"])
+    return new Dice(DiceType.D8, ["1", "2", "3", "4", "5", "6", "7", "8"])
 }
 
 export const d10 = (): Dice => {
-    return new Dice("D10", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+    return new Dice(DiceType.D10, ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
 }
 
 export const d12 = (): Dice => {
-    return new Dice("D12", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"])
+    return new Dice(DiceType.D12, ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"])
 }
 
 export const d20 = (): Dice => {
-    return new Dice("D20", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"])
+    return new Dice(DiceType.D20, ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"])
 }
