@@ -1,4 +1,3 @@
-import { assert, it, test } from "vitest";
 import { d6, Dice } from "../main/Dice";
 
 test("Dice", () => {
