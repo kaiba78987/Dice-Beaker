@@ -32,6 +32,8 @@ D12 = "D12",
 D20 = "D20"
 }
 
+export type DiceGeneratorFunction = () => Dice
+
 export const coin = (): Dice => {
     return new Dice(DiceType.Coin, ["Face", "Tail"])
 }
